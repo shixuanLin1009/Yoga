@@ -16,8 +16,6 @@ This project enables two users to establish a WebRTC-based video call with live 
   - [Firebase Setup](#firebase-setup)
   - [Running the Application](#running-the-application)
   - [How It Works](#how-it-works)
-  - [Project Structure](#project-structure)
-  - [License](#license)
 
 ## Project Setup
 
@@ -96,25 +94,6 @@ Before running this project, ensure you have the following installed:
 - **WebRTC Setup**: The app establishes a peer-to-peer connection using WebRTC. STUN servers are used for NAT traversal.
 - **Signaling via Firebase**: Firebase Firestore is used to exchange SDP (Session Description Protocol) information and ICE (Interactive Connectivity Establishment) candidates between peers.
 - **MediaPipe Pose Detection**: The app tracks the user's skeleton with MediaPipe and draws the landmarks and connections on a canvas. Certain pose points are filtered out to customize the visualization.
-
-## Project Structure
-
-```
-.
-├── src/
-│   ├── index.html            # Main HTML file
-│   ├── main.js               # Entry JavaScript file
-│   ├── style.css             # Styles for the app
-│   └── assets/               # Static assets like images
-├── package.json              # Node.js dependencies and scripts
-├── vite.config.js            # Vite configuration file
-├── README.md                 # Documentation
-└── firebase.json             # Firebase configuration file
-```
-
-## License
-
-This project is licensed under the MIT License.
 
 ---
 
