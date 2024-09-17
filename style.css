@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+
+body {
+  font-family: "Syne Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin: 80px 10px;
+  background-color: #fff8e3;
+  border: #83a0ac;
+}
+video {
+  display: none; /* 初始状态下隐藏 video 元素 */
+}
+canvas {
+  left: 0;
+  width: 45vw;
+  height: 70vh;
+  margin: 1rem;
+  background: #fff8e3;
+  border-radius: 5px;
+  border: 5px solid #83a0ac;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#info {
+  font-size: 1.5rem;
+  margin: 1rem;
+  left: 40px;
+  display: flex;
+  margin-left: 3rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#utils {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+  margin-right: 2rem;
+}
+#utils button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#utils button:hover {
+  background: #34495e;
+}
+#utils button:active {
+  background: #2c3e50;
+}
+#utils button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+#utils button:disabled:hover {
+  background: #bdc3c7;
+}
+#utils button:disabled:active {
+  background: #bdc3c7;
+}
+#utils button:focus {
+  outline: none;
+}
+#utils input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}

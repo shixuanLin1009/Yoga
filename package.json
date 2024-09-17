@@ -1,0 +1,21 @@
+{
+  "name": "webrtc-fireship",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1",
+    "vite-plugin-cdn-import": "^1.0.1",
+    "vite-plugin-mediapipe": "^0.1.0"
+  },
+  "dependencies": {
+    "@mediapipe/drawing_utils": "^0.3.1675466124",
+    "@mediapipe/pose": "^0.5.1675469404",
+    "firebase": "^10.13.0"
+  }
+}

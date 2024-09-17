@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Demo</title>
+    <!-- 引入 MediaPipe -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+  </head>
+  <body>
+    <div class="videos">
+      <span>
+        <video id="webcamVideo" autoplay playsinline></video>
+        <canvas class="canvas" id="localCanvas"></canvas>
+      </span>
+      <span>
+        <video id="remoteVideo" autoplay playsinline></video>
+        <canvas id="remoteCanvas"></canvas>
+      </span>
+    </div>
+    <div id="info">
+      <img src="Logo.jpeg" alt="Logo" width="230" id="logo" />
+      <div id="utils">
+        <button id="webcamButton">Start webcam</button>
+        <button id="callButton" disabled>Create Call (offer)</button>
+        <div id="Answer">
+          <input
+            id="callInput"
+            placeholder="Answer the call from a different browser window or device"
+          />
+          <button id="answerButton" disabled>Answer</button>
+          <button id="hangupButton" disabled>Hang Up</button>
+        </div>
+      </div>
+    </div>
+    <script defer type="module" src="/main.js"></script>
+    <a href="home.html"></a>
+  </body>
+</html>
