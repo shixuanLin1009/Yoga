@@ -40,13 +40,7 @@ Before running this project, ensure you have the following installed:
    cd <repository-directory>
    ```
 
-2. Install the firebase-tools
-
-   ```bash
-   npm firebse-tools -g
-   ```
-
-3. Install the project dependencies:
+2. Install the project dependencies:
 
    ```bash
    npm install
